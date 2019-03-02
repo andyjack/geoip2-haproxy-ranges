@@ -33,7 +33,7 @@ func main() {
 	isoToFile := make(map[string](*os.File))
 
 	networks := mmdb.Networks()
-	i := 1
+	i := 0
 	for networks.Next() {
 		subnet, err := networks.Network(&record)
 		if err != nil {
